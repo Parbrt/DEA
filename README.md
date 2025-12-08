@@ -20,8 +20,6 @@ Pour répondre à cette exigence, le modèle a été optimisé selon une fonctio
 
 ## Installation et Lancement
 
-```
-
 ### 1. Construction de l'image Docker
 
 Le projet est encapsulé dans un conteneur Docker pour assurer la reproductibilité et servir le modèle via une API.
