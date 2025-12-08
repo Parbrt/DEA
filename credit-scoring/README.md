@@ -1,4 +1,4 @@
-# 🎯 Projet de Credit Scoring & MLOps
+# Projet de Credit Scoring & MLOps
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat&logo=python) ![FastAPI](https://img.shields.io/badge/FastAPI-Serving-009688?style=flat&logo=fastapi) ![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=flat&logo=docker) ![MLflow](https://img.shields.io/badge/MLflow-Tracking-0194E2?style=flat&logo=mlflow) ![LightGBM](https://img.shields.io/badge/LightGBM-Model-green?style=flat)
 
@@ -18,7 +18,7 @@ Pour répondre à cette exigence, le modèle a été optimisé selon une fonctio
 
 ---
 
-## ⚙️ Installation et Lancement
+## Installation et Lancement
 
 ### 1. Construction de l'image Docker
 
@@ -41,7 +41,7 @@ L'API est maintenant accessible localment sur `http://127.0.0.1:1234`
 
 ### 3. Test de l'API
 
-```python3
+```bash
 python3 scripts/05_test_real_api.py
 ```
 
