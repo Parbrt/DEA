@@ -1,1 +1,6 @@
-requirement
+fastapi
+uvicorn
+pydantic
+pandas
+lightgbm
+scikit-learn
