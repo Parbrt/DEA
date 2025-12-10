@@ -71,20 +71,22 @@ Ce seuil à été déterminé en simulant les coûts financiers sur l'ensemble d
 ```
 credit-scoring/
 ├── dataset/
-│   ├── raw/                 # Données brutes (Kaggle)
-│   └── processed/           # Données nettoyées et fusionnées (Parquet)
-├── mlruns/                  # Tracking des expérimentations MLflow
-├── model/                   # Artefacts du modèle final
-│   └── model.pkl            # Modèle sérialisé pour Docker
-├── reports/                 # Rapports et figures générées
-│   └── figures/             # Courbe coût vs seuil, Feature Importance
-├── scripts/                 # Pipeline Data Science complet
-│   ├── 02_processing_dataset.py     # Nettoyage et Feature Engineering
-│   ├── 05_model_comparison.py       # Comparaison des algorithmes (LGBM, RF, LogReg)
-│   ├── 06_threshold_optimization.py # Optimisation Hyperparamètres & Seuil Métier
-│   └── 07_test_real_api.py          # Script de test automatisé de l'API
-├── app.py                   # Code source de l'API FastAPI
-├── Dockerfile               # Configuration de l'image Docker
-├── requirements.txt         # Liste des dépendances Python
-└── README.md
+│   ├── raw/                            # Données brutes (Kaggle)
+│   └── processed/                      # Données nettoyées et fusionnées (Parquet)
+├── mlruns/                             # Tracking des expérimentations MLflow
+├── model/                              # Artefacts du modèle final
+│   └── model.pkl                       # Modèle sérialisé pour Docker
+├── reports/                            # Rapports et figures générées
+│   └── figures/                        # Courbe coût vs seuil, Feature Importance
+├── scripts/                            # Pipeline Data Science complet
+│   ├── 01_data_analysis.py             # Graphique et visualisation des data 
+│   ├── 02_processing_dataset.py        # Nettoyage et feature engineering
+│   ├── 03_model_comparison.py          # Comparaison des algorithmes 
+│   ├── 04_threshold_optimization.py    # Optimisation Hyperparamètres & Seuil Métier
+│   └── 05_test_real_api.py             # Script de test automatisé de l'API
+├── src/                                
+│   └── app.py                          # Code source de l'API FastAPI 
+├── Dockerfile                          # Configuration de l'image Docker
+├── README.md                           
+└── requirements.txt
 ```

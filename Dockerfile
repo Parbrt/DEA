@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
   libgomp1\
   && rm -rf /var/lib/apt/lists/*
 
-COPY credit-scoring/requirements.txt .
+COPY requirements.txt .
 COPY src/app.py .
 COPY model/ ./model/
 
